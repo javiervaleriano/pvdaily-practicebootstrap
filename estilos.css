@@ -1,0 +1,145 @@
+/* HEADER */
+.navbar {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: -99999px;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+}
+
+/* CAROUSEL */
+h2 {
+    text-shadow: 0 2px 2px #000;
+}
+.carousel-inner p {
+    text-shadow: 0 3px 2px #000;
+}
+
+/* RIBBON */
+#ribbon { background: linear-gradient(180deg, #000, gray); }
+
+#ribbon::after {
+    content: '';
+    position: relative;
+    display: block;
+    background-color: transparent;
+    margin: 0 auto;
+    left: auto;
+    height: .5em;
+    width: 30%;
+    margin-top: -1.5em;
+}
+
+#videogames {
+    background: linear-gradient(-40deg, #000 .1%, gray, #fff);
+    margin-top: -1em;
+    position: relative;
+    z-index: 10;
+    box-shadow: 2px -2.5px 4px #fff, 0 2.5px 4px #fff;
+}
+
+/* SEPARATOR RIBBON */
+#separator-ribbon {
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+}
+#separator-ribbon .content {
+    background: linear-gradient(180deg, gray, #fff);
+    position: relative;
+    left: -25%;
+    height: 100%;
+    width: 150%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+/* CARDS OF TOPICS */
+.card { transition: all .6s; }
+.card:hover {
+    transform:translateY(-5px);
+    box-shadow: 0 2px 5px #000;
+}
+
+#another-topics a {
+    font-size: 1.05em;
+    color: #48C9B0;
+    text-decoration: none;
+    transition: all .3s;
+}
+#another-topics a:hover {
+    color: #4C998A;
+}
+
+/* MOST READ */
+#separator-most-read {
+    height: 75px;
+    overflow: hidden;
+}
+#separator-most-read .content {
+    position: relative;
+    left: -5%;
+    height: 100%;
+    width: 110%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: linear-gradient(180deg, #fff 10%, #48C9B0);
+}
+
+#most-read {
+    background-color: #48C9B0;
+}
+
+.link-read {
+    text-decoration: none;
+}
+.link-read:hover {
+    text-decoration: underline;
+}
+
+/* ABOUT */
+#about { background-color: #48C9B0; }
+
+#border-top {
+    border-top: 2px solid rgb(11, 245, 81);
+    margin: 0 1vw;
+    padding-top: 1.7em;
+}
+
+#about p:first-letter {
+    margin-left: .8em;
+}
+
+/* FOOTER */
+#footer {
+    background: rgba(24, 150, 133, 0.4);
+}
+
+.fab {
+    font-size: 2em;
+    margin: 0 .3em;
+}
+.fa-instagram-square {
+    color: rgb(89, 37, 231);
+}
+.fa-instagram-square:hover {
+    color:rgb(79, 41, 182);
+}
+
+/* MEDIA QUERIE FOR THE FOOTER */
+@media only screen and (max-width: 576px) {
+    #div-nets {
+        text-align: center;
+    }
+    #div-address {
+        text-align: center;
+    }
+}
