@@ -63,19 +63,23 @@ h2 {
 }
 
 /* CARDS OF TOPICS */
-.card { transition: all .6s; }
+.card {
+    cursor: pointer;
+    transition: all .6s;
+}
 .card:hover {
-    transform:translateY(-5px);
+    margin-top: -.35em;
     box-shadow: 0 2px 5px #000;
 }
 
-#another-topics a {
+#other-topics a {
     font-size: 1.05em;
     color: #48C9B0;
     text-decoration: none;
+    cursor: pointer;
     transition: all .3s;
 }
-#another-topics a:hover {
+#other-topics a:hover {
     color: #4C998A;
 }
 
